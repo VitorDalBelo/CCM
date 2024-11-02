@@ -13,13 +13,15 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.vitordalbelo.CCM2"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.vitordalbelo.CCM2"
     },
     "web": {
       "bundler": "metro",
@@ -27,7 +29,13 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-font",
+        {
+          "fonts":["./assets/fonts/Baloo_2/Baloo2-VariableFont_wght.ttf"]
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
